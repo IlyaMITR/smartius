@@ -1,0 +1,55 @@
+.message-section{
+	height: 85vh;
+	overflow-y: auto;
+	.message-list{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		padding: 1em 2em;
+		.message{
+			&.left{
+				align-self: flex-start;
+			}
+			position: relative;
+			border: 1px solid #000;
+			border-radius: 1em;
+			padding: 1.5em 1em;
+			margin-bottom: 1em;
+			width: 60%;
+			&__from{
+				border-left: double #000;
+				padding-left: .3em;
+				background-color: #eee;
+				margin-bottom: .5em;
+				&_user{
+					color: #777;
+					font-size: 1em;
+				}
+			}
+			&__user{
+				position: absolute;
+				top: 0;
+				color: #777;
+			}
+			&__content{
+				padding-left: 1em;
+			}
+			&:hover{
+				.message__reply{
+					opacity: 1;
+				}
+			}
+			&__reply{
+				opacity: 0;
+				position: absolute;
+				bottom: 5%;
+				right: 5%;
+				&_btn{
+					background-color: transparent;
+					border: 0;
+					color: #777;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.console-form{
+	height: 75%;
+	display: flex;
+	&__inputs{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		&_item{
+			border: 1px solid #000;
+			border-radius: .5em;
+			padding: .5em 1em;
+			margin: .5em;
+		}
+		textarea{
+			height: -webkit-fill-available;
+			resize: none;
+			margin-top: 0;
+		}
+	}
+	&__submit{
+		width: 20%;
+		background-color: transparent;
+		border: 0;
+		border-radius: .15em;
+		font-size: 3em;
+		color: rgb(15, 141, 15);
+		margin: .15em .15em .15em 0;
+		transition: .1	s;
+		&:hover{
+			background-color: rgb(207 242 207);
+		}
+	}
+}
